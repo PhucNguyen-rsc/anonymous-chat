@@ -1,3 +1,5 @@
+
+
 body {
 	font-family: sans-serif;
     background: #E0E0E1;
@@ -20,6 +22,26 @@ header {
 	font-size: 1.5em;
 }
 
+#btn-show-modal-question:hover {
+	cursor: pointer;
+}
+
+#btn-add-modal-question {
+	align-items: center;
+	width: auto;
+	height: 50px;
+	margin: 20px;
+	font-size: 1.25em;
+	padding: 0.75em;
+	background-color: #000;
+	color: white;
+	border: none;
+}
+
+#btn-add-modal-question:hover {
+	cursor: pointer;
+}
+
 input[type="text"], .modal-content > input[type="button"] {
 	font-size: 1.25em;
 	padding: 0.5em;
@@ -32,6 +54,10 @@ input[type="button"] {
 	color: white;
 }
 
+input[type="button"]:hover {
+	cursor: pointer;
+}
+
 article {
 	margin-bottom: 2em;
 }
@@ -42,7 +68,7 @@ article > h3 {
 }
 .modal {
 	/* TODO: comment display: none out if using showModal */
-	display: none;
+	/* display: none; */
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -63,4 +89,13 @@ article > h3 {
 	vertical-align: center;
     border: 1px solid #888;
     width: 80%; 
+}
+
+.question {
+	font-weight: bold;
+	padding-left: 20px;
+	width: auto;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px dotted black;
 }
